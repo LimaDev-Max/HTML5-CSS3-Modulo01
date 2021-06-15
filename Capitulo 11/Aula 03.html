@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/capa-sites-favicon.png" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+    <style>
+        body {background-color: darkcyan;}
+    </style>
+</head>
+<body>
+    <h1>imagens Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+       <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> 
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzinso Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/al2-vibe mountain.mp3"controls autopla ></audio>
+    <!-- MP3 WAV OGG -->
+   <audio preload="metadata" controls >
+        <source src="midia/al2-vibe mountain.mp3" type="audio/mpeg">
+        <source src="midia/al2-vibe mountain.ogg" type="audio/ogg">
+        <source src="midia/al2-vibe mountain.wav" type="audio/wav">
+    </audio>
+
+    <p>Se o seu navegador não conseguir reproduzir áudio. <a href="midia/al2-vibe mountain.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+</body>
+</html>
